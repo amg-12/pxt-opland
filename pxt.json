@@ -1,0 +1,15 @@
+{
+    "name": "OP Land",
+    "version": "0.0.1",
+    "description": "Developed by Amitai",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "*.md"
+    ],
+    "testFiles": [],
+    "public": true,
+    "preferredEditor": "tsprj"
+}
