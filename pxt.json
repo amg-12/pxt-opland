@@ -7,7 +7,9 @@
         "core": "*"
     },
     "files": [
-        "*.md"
+        "02-superbow-a.md"
+        "02-superbow-b.md",
+        "02-superbow-c.md",
     ],
     "testFiles": [],
     "public": true,
