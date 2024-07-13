@@ -64,6 +64,23 @@ player.onChat("portal", function () {
 })
 ```
 
+```customts
+player.onChat("clear", function () {
+    blocks.fill(
+    AIR,
+    positions.add(
+    location,
+    pos(0, 1, 0)
+    ),
+    positions.add(
+    location,
+    pos(0, 4, 3)
+    ),
+    FillOperation.Replace
+    )
+})
+```
+
 ## Try it!
 
 Say **portal** in the chat.
