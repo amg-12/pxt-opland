@@ -1,10 +1,15 @@
-  01-diggy
+LEGEND
+x - tutorial + npc
+v - tutorial
+l - npc
+
+v 01-diggy
 x 02-superbow
-  03-nuke
-  04-flower
-  05-panda
-  06-stripmine
-  07-netherportal
+v 03-nuke
+v 04-flower
+v 05-panda
+v 06-stripmine
+v 07-netherportal
   08-chargedcreeper
   09-teletrident
   10-bomber

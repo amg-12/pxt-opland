@@ -7,6 +7,9 @@
         "core": "*"
     },
     "files": [
+        "01-diggy-a.md",
+        "01-diggy-b.md",
+        "01-diggy-c.md",
         "02-superbow-a.md",
         "02-superbow-b.md",
         "02-superbow-c.md"

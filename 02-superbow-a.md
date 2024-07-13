@@ -11,6 +11,10 @@ mobs.give(mobs.target(LOCAL_PLAYER), BOW, 1)
 mobs.give(mobs.target(LOCAL_PLAYER), ARROW, 64)
 ```
 
+```template
+{}
+```
+
 ## Step 2
 
 Build this
