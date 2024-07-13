@@ -3,13 +3,13 @@ x - tutorial + npc
 v - tutorial
 l - npc
 
-v 01-diggy
+x 01-diggy
 x 02-superbow
-v 03-nuke
-v 04-flower
-v 05-panda
-v 06-stripmine
-v 07-netherportal
+x 03-nuke
+x 04-flower
+x 05-panda
+x 06-stripmine
+x 07-netherportal
   08-chargedcreeper
   09-teletrident
   10-bomber
