@@ -10,13 +10,13 @@ x 04-flower
 x 05-panda
 x 06-stripmine
 x 07-netherportal
-  08-chargedcreeper
-  09-teletrident
-  10-bomber
-  11-slowdown
-  12-pigsfly
-  13-randomiser
-  14-carpet
+v 08-chargedcreeper
+v 09-teletrident
+v 10-bomber
+v 11-slowdown
+v 12-pigsfly
+v 13-randomiser
+v 14-carpet
   15-fireworks
   16-firepits
   17-creepercat
