@@ -2,19 +2,13 @@
 
 # Randomiser
 
-## Complete the code
+## Fill in the numbers
 
 ```blocks
 player.onTravelled(WALK, function () {
     blocks.replace(
     blocks.blockById(randint(1, 252)),
-    GRASS,
-    pos(-15, -15, -15),
-    pos(15, 15, 15)
-    )
-    blocks.replace(
-    blocks.blockById(randint(1, 252)),
-    STONE,
+    ENDSTONE,
     pos(-15, -15, -15),
     pos(15, 15, 15)
     )
@@ -24,10 +18,10 @@ player.onTravelled(WALK, function () {
 ```template
 player.onTravelled(WALK, function () {
     blocks.replace(
-    blocks.blockById(randint(1, 252)),
+    blocks.blockById(randint(0, 0)),
     GRASS,
-    pos(-15, -15, -15),
-    pos(15, 15, 15)
+    pos(0, 0, 0),
+    pos(0, 0, 0)
     )
 })
 ```
