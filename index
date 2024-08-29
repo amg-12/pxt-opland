@@ -17,30 +17,30 @@ x 11-slowdown
 x 12-pigsfly
 x 13-randomiser
 x 14-flyingcarpet
-  15-fireworks
-  16-firepits
-  17-creepercat
-  18-enchanter
-  19-weather
-  20-daytime
-  21-gamemode
-  22-forest
-  23-sniper
-  24-agentattack
-  25-diamondhunt
-  26-enderportal
-  27-agentfollow
-  28-leviosa
-  29-ladder
-  30-treehouse
-  31-irongolem
-  32-snowgolem
+v 15-fireworks
+v 16-firepits
+v 17-creepercat
+v 18-enchanter
+v 19-weather
+v 20-daytime
+v 21-gamemode
+v 22-forest (NOT WORKING IN 1.20)
+v 23-sniper
+v 24-agentattack
+v 25-diamondhunt
+v 26-enderportal
+v 27-agentfollow
+v 28-leviosa
+v 29-ladder
+v 30-treehouse
+v 31-irongolem
+v 32-snowgolem
   33-glowstick
   34-watertnt
   35-watertorch
   36-icebomb
-  37-timemachine
+v 37-timemachine
   38-fertiliser
   39-sparklers
   40-balloons
-  41-titlecrawl
+v 41-titlecrawl
