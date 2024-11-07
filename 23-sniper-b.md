@@ -7,13 +7,13 @@
 ```blocks
 let z = 0
 player.onArrowShot(function () {
-    z = -1
-    for (let index = 0; index < 20; index++) {
-        if (!(blocks.testForBlock(AIR, pos(0, 1, -z)))) {
-            mobs.spawn(PRIMED_TNT, pos(0, 1, -z))
+    z = 1
+    for (let index = 0; index < 40; index++) {
+        if (!(blocks.testForBlock(AIR, posLocal(0, 0, z)))) {
+            mobs.spawn(PRIMED_TNT, posLocal(0, 0, z))
             break;
         }
-        z += -1
+        z += 1
     }
 })
 ```
@@ -21,10 +21,11 @@ player.onArrowShot(function () {
 ```template
 let z = 0
 player.onArrowShot(function () {
-    z = -1
-    for (let index = 0; index < 20; index++) {
-        if (!(blocks.testForBlock(AIR, pos(0, 1, -z)))) {}
-        z += -1
+    z = 1
+    for (let index = 0; index < 40; index++) {
+        if (!(blocks.testForBlock(AIR, posLocal(0, 0, z)))) {
+        }
+        z += 1
     }
 })
 ```
