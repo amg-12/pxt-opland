@@ -4,6 +4,8 @@
 
 ## Try it!
 
+Walk around and watch the blocks change.
+
 ```template
 player.onTravelled(WALK, function () {
     blocks.replace(
