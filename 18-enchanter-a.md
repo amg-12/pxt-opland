@@ -9,7 +9,7 @@ player.onChat("e", function () {
     positions2.save(posCamera(0, 0, 4))
     blocks.fill(
     BOOKSHELF,
-    positions2.load(-2, -1, -2),
+    positions2.load(-2, 0, -2),
     positions2.load(2, 1, 2),
     FillOperation.Replace
     )
