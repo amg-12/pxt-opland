@@ -6,34 +6,48 @@
 
 ```blocks
 player.onChat("e", function () {
+    positions2.save(posCamera(0, 0, 4))
     blocks.fill(
     BOOKSHELF,
-    pos(1, 0, 1),
-    pos(2, 1, 5),
+    positions2.load(-2, -1, -2),
+    positions2.load(2, 1, 2),
     FillOperation.Replace
     )
     blocks.fill(
     AIR,
-    pos(1, 0, 2),
-    pos(1, 1, 4),
+    positions2.load(-1, 0, -1),
+    positions2.load(1, 1, 1),
     FillOperation.Replace
     )
-    blocks.place(ENCHANTMENT_TABLE, pos(1, 0, 3))
+    blocks.fill(
+    AIR,
+    positions2.load(0, 0, 0),
+    positions2.load(0, 1, 2),
+    FillOperation.Replace
+    )
+    blocks.place(ENCHANTMENT_TABLE, positions2.load(0, 0, 0))
 })
 ```
 
 ```template
 player.onChat("e", function () {
+    positions2.save(posCamera(0, 0, 4))
     blocks.fill(
     BOOKSHELF,
-    pos(1, 0, 1),
-    pos(2, 1, 5),
+    positions2.load(-2, -1, -2),
+    positions2.load(2, 1, 2),
     FillOperation.Replace
     )
     blocks.fill(
     AIR,
-    pos(1, 0, 2),
-    pos(1, 1, 4),
+    positions2.load(-1, 0, -1),
+    positions2.load(1, 1, 1),
+    FillOperation.Replace
+    )
+    blocks.fill(
+    AIR,
+    positions2.load(0, 0, 0),
+    positions2.load(0, 1, 2),
     FillOperation.Replace
     )
 })
