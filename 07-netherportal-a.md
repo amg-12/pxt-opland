@@ -8,29 +8,13 @@
 Build this
 
 ```blocks
-let location: Position = null
-location = world(48, 62, 73)
+player.onChat("portal", function () {
+    positions2.save(world(48, 62, 73))
+})
 ```
 
 ```template
 {}
-```
-
-```customts
-player.onChat("clear", function () {
-    blocks.fill(
-    AIR,
-    positions.add(
-    location,
-    pos(0, 1, 0)
-    ),
-    positions.add(
-    location,
-    pos(0, 4, 3)
-    ),
-    FillOperation.Replace
-    )
-})
 ```
 
 ## Step 2
@@ -39,13 +23,17 @@ Build this
 
 ```blocks
 player.onChat("portal", function () {
+    positions2.save(world(48, 62, 73))
     blocks.fill(
     OBSIDIAN,
-    location,
-    positions.add(
-    location,
-    pos(0, 4, 3)
-    ),
+    positions2.load(0, 0, 0),
+    positions2.load(0, 4, 3),
+    FillOperation.Replace
+    )
+    blocks.fill(
+    AIR,
+    positions2.load(0, 1, 1),
+    positions2.load(0, 3, 2),
     FillOperation.Replace
     )
 })
@@ -57,31 +45,20 @@ Complete the code
 
 ```blocks
 player.onChat("portal", function () {
+    positions2.save(world(48, 62, 73))
     blocks.fill(
     OBSIDIAN,
-    location,
-    positions.add(
-    location,
-    pos(0, 4, 3)
-    ),
+    positions2.load(0, 0, 0),
+    positions2.load(0, 4, 3),
     FillOperation.Replace
     )
     blocks.fill(
     AIR,
-    positions.add(
-    location,
-    pos(0, 1, 1)
-    ),
-    positions.add(
-    location,
-    pos(0, 3, 2)
-    ),
+    positions2.load(0, 1, 1),
+    positions2.load(0, 3, 2),
     FillOperation.Replace
     )
-    blocks.place(FIRE, positions.add(
-    location,
-    pos(0, 1, 1)
-    ))
+    blocks.place(FIRE, positions2.load(0, 1, 1))
 })
 ```
 

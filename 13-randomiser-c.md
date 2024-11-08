@@ -11,14 +11,17 @@ player.onTravelled(WALK, function () {
     blocks.replace(
     blocks.blockById(randint(1, 252)),
     ENDSTONE,
-    pos(-15, -15, -15),
-    pos(15, 15, 15)
+    pos(-5, -1, -5),
+    pos(5, 5, 5)
     )
     blocks.replace(
     blocks.blockById(randint(1, 252)),
     OBSIDIAN,
-    pos(-15, -15, -15),
-    pos(15, 15, 15)
+    pos(-5, -1, -5),
+    pos(5, 5, 5)
+    )
+    player.execute(
+    "kill @e[type=item]"
     )
 })
 ```

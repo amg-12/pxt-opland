@@ -8,10 +8,20 @@ Say **g** in the chat to spawn an iron golem.
 
 ```template
 player.onChat("g", function () {
-    blocks.place(IRON_BLOCK, pos(1, 0, 1))
-    blocks.place(IRON_BLOCK, pos(1, 1, 1))
-    blocks.place(IRON_BLOCK, pos(0, 1, 1))
-    blocks.place(IRON_BLOCK, pos(2, 1, 1))
-    blocks.place(JACK_O_LANTERN, pos(1, 2, 1))
+    positions2.save(posCamera(0, 0, 3))
+    blocks.fill(
+    AIR,
+    positions2.load(-1, 0, 0),
+    positions2.load(1, 2, 0),
+    FillOperation.Replace
+    )
+    shapes.circle(
+    IRON_BLOCK,
+    positions2.load(0, 1, 0),
+    1,
+    Axis.Z,
+    ShapeOperation.Replace
+    )
+    blocks.place(JACK_O_LANTERN, positions2.load(0, 2, 0))
 })
 ```

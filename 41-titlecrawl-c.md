@@ -7,25 +7,23 @@
 Say **w** in the chat to create a moving text.
 
 ```template
-let y_pos = 0
 player.onChat("w", function () {
-    y_pos = 15
+    positions2.save(posCamera(-15, 15, 10))
     blocks.print(
     "Hello!",
     GOLD_BLOCK,
-    pos(-10, y_pos, -10),
-    EAST
+    positions2.load(0, 0, 0),
+    SOUTH
     )
-    while (y_pos > -10) {
+    for (let index = 0; index <= 25; index++) {
         loops.pause(500)
         blocks.clone(
-        pos(-10, y_pos, -10),
-        pos(30, y_pos + 5, -10),
-        pos(-10, y_pos - 1, -10),
+        positions2.load(0, 0 - index, 0),
+        positions2.load(0, 5 - index, 40),
+        positions2.load(0, -1 - index, 0),
         CloneMask.Masked,
         CloneMode.Move
         )
-        y_pos += -1
     }
 })
 ```

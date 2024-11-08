@@ -15,7 +15,7 @@ player.onChat("t", function () {
 player.onItemInteracted(TRIDENT, function () {
     mobs.teleportToPosition(
     mobs.target(LOCAL_PLAYER),
-    posCamera(0, 2, 50)
+    positions.groundPosition(posLocal(0, 0, 50))
     )
 })
 ```

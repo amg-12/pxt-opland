@@ -6,16 +6,26 @@
 
 ```block
 player.onChat("g", function () {
-    blocks.place(SNOW, pos(1, 0, 1))
-    blocks.place(SNOW, pos(1, 1, 1))
-    blocks.place(CARVED_PUMPKIN, pos(1, 2, 1))
+    positions2.save(posCamera(0, 0, 2))
+    blocks.fill(
+    SNOW,
+    positions2.load(0, 0, 0),
+    positions2.load(0, 1, 0),
+    FillOperation.Replace
+    )
+    blocks.place(CARVED_PUMPKIN, positions2.load(0, 2, 0))
 })
 ```
 
 ```template
 player.onChat("g", function () {
-    blocks.place(SNOW, pos(1, 0, 1))
-    blocks.place(SNOW, pos(1, 1, 1))
+    positions2.save(posCamera(0, 0, 2))
+    blocks.fill(
+    SNOW,
+    positions2.load(0, 0, 0),
+    positions2.load(0, 1, 0),
+    FillOperation.Replace
+    )
 })
 ```
 

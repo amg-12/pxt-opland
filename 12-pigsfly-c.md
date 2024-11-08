@@ -14,7 +14,6 @@ player.onChat("fly", function () {
         pos(10, 0, 10)
         ))
     }
-    mobs.applyEffect(LEVITATION, mobs.target(ALL_ENTITIES), 2, 35)
-    mobs.clearEffect(mobs.target(LOCAL_PLAYER))
+    mobs.applyEffect(LEVITATION, mobs.entitiesByType(PIG), 2, 35)
 })
 ```

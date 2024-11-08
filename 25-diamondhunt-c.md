@@ -8,11 +8,21 @@ Say **d** in the chat to fill the caves with diamonds.
 
 ```template
 player.onChat("d", function () {
-    for (let index = 0; index < randint(1, 8); index++) {
-        blocks.place(DIAMOND_ORE, pos(randint(-50, 50), randint(-20, 20), randint(-50, 50)))
-    }
-    for (let index = 0; index < randint(1, 3); index++) {
-        blocks.place(DIAMOND_BLOCK, pos(randint(-50, 50), randint(-20, 20), randint(-50, 50)))
-    }
+    populate(50, DIAMOND_ORE)
+    populate(5, DIAMOND_BLOCK)
 })
+function populate (iterations: number, block: number) {
+    for (let index = 0; index < iterations; index++) {
+        random_position = randpos(
+        pos(-5, -5, -5),
+        pos(5, 5, 5)
+        )
+        blocks.replace(
+        STONE,
+        block,
+        random_position,
+        random_position
+        )
+    }
+}
 ```
