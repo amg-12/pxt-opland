@@ -14,8 +14,8 @@ function populate (iterations: number, block: number) {
         pos(5, 5, 5)
         )
         blocks.replace(
-        STONE,
         block,
+        STONE,
         random_position,
         random_position
         )
@@ -38,8 +38,8 @@ function populate (iterations: number, block: number) {
         pos(5, 5, 5)
         )
         blocks.replace(
-        STONE,
         block,
+        STONE,
         random_position,
         random_position
         )
