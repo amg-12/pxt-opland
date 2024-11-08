@@ -18,14 +18,17 @@ player.onTravelled(WALK, function () {
     pos(-5, -1, -5),
     pos(5, 5, 5)
     )
-    player.execute(
-    "kill @e[type=item]"
-    )
 })
 ```
 
 ```template
 {}
+```
+
+```customts
+loops.forever(function () {
+	player.execute("kill @e[type=item]")
+})
 ```
 
 ## Try it!

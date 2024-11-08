@@ -2,9 +2,7 @@
 
 # Randomiser
 
-## Try it!
-
-Walk around and watch the blocks change.
+## Build this
 
 ```template
 player.onTravelled(WALK, function () {
@@ -20,8 +18,11 @@ player.onTravelled(WALK, function () {
     pos(-5, -1, -5),
     pos(5, 5, 5)
     )
-    player.execute(
-    "kill @e[type=item]"
-    )
+})
+```
+
+```customts
+loops.forever(function () {
+	player.execute("kill @e[type=item]")
 })
 ```
