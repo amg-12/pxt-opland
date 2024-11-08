@@ -2,7 +2,7 @@
 
 # Randomiser
 
-## Build this
+## Try it!
 
 ```template
 player.onTravelled(WALK, function () {
