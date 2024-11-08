@@ -1,10 +1,10 @@
 {
     "name": "OP Land",
-    "version": "0.0.1",
     "description": "Developed by Amitai",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "extensions": "github:The-Code-Zone/pxt-mc-extensions"
     },
     "files": [
         "01-diggy-a.md",
