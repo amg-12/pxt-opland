@@ -7,10 +7,14 @@
 Say **attack** in the chat to make the agent attack.
 
 ```template
-player.onChat("attack", function () {
-    agent.teleportToPlayer()
-    for (let index = 0; index < 500; index++) {
-        agent.attack(FORWARD)
-    }
-})
+let closest_monster = mobs.target(ALL_ENTITIES)
+closest_monster.addRule("family", "monster")
+closest_monster.addRule("c", "1")
+while (true) {
+    mobs.teleportToPlayer(
+    mobs.target(MY_AGENT),
+    closest_monster
+    )
+    agent.attack(FORWARD)
+}
 ```
