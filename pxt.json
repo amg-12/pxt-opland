@@ -7,7 +7,7 @@
         "extensions": "github:The-Code-Zone/pxt-mc-extensions"
     },
     "files": [
-        "00-tutorial",
+        "00-tutorial.md",
         "01-diggy-a.md",
         "01-diggy-b.md",
         "01-diggy-c.md",
