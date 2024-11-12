@@ -2,6 +2,8 @@
 
 # Tutorial
 
+## Try it!
+
 Right-click with the shovel to dig.
 
 ```template
