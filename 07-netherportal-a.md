@@ -8,7 +8,7 @@
 Build this
 
 ```blocks
-player.onChat("portal", function () {
+player.onChat("p", function () {
     positions2.save(world(48, 62, 73))
 })
 ```
@@ -22,7 +22,7 @@ player.onChat("portal", function () {
 Build this
 
 ```blocks
-player.onChat("portal", function () {
+player.onChat("p", function () {
     positions2.save(world(48, 62, 73))
     blocks.fill(
     OBSIDIAN,
@@ -44,7 +44,7 @@ player.onChat("portal", function () {
 Complete the code
 
 ```blocks
-player.onChat("portal", function () {
+player.onChat("p", function () {
     positions2.save(world(48, 62, 73))
     blocks.fill(
     OBSIDIAN,
@@ -64,4 +64,4 @@ player.onChat("portal", function () {
 
 ## Try it!
 
-Say **portal** in the chat.
+Say **p** in the chat.

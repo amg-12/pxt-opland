@@ -4,10 +4,10 @@
 
 ## Try it!
 
-Say **portal** in the chat.
+Say **p** in the chat.
 
 ```template
-player.onChat("portal", function () {
+player.onChat("p", function () {
     positions2.save(world(48, 62, 73))
     blocks.fill(
     OBSIDIAN,
