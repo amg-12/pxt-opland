@@ -8,7 +8,7 @@ Your agent will follow you.
 
 ```template
 loops.forever(function () {
-    agent.teleportToPlayer()
-    loops.pause(3000)
+    positions2.save(posCamera(0, 0, -2))
+    agent.teleport(positions2.load(0, 0, 0), positions.toCompassDirection(player.getOrientation()))
 })
 ```
