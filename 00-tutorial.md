@@ -4,8 +4,6 @@
 
 ## Try it!
 
-Right-click with the shovel to dig.
-
 ```template
 player.onChat("t", function () {
     mobs.teleportToPosition(
